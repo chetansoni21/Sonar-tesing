@@ -17,7 +17,8 @@
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
     <sonar.projectKey>sonar-test</sonar.projectKey>
-    <sonar.projectName>sonar-test</sonar.projectName>	  
+    <sonar.projectName>sonar-test</sonar.projectName>	
+    <sonar.host.url>http://192.168.31.243:9001</sonar.host.url>
   </properties>
 
   <dependencies>
