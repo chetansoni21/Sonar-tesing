@@ -40,7 +40,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}  # SonarQube token from secrets
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}  # SonarQube server URL
-        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar \
-               -Dsonar.projectKey=sonar-test \
-               -Dsonar.host.url=$SONAR_HOST_URL \
-               -Dsonar.login=$SONAR_TOKEN
+        run: |
+          mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar \
+              -Dsonar.projectKey=sonar-test \
+              -Dsonar.host.url=$SONAR_HOST_URL \
+              -Dsonar.login=$SONAR_TOKEN
