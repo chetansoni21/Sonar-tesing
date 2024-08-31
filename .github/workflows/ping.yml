@@ -15,4 +15,4 @@ jobs:
 
       - name: Test connection to SonarQube
         run: |
-          curl -I http://192.168.31.243:9001
+          curl -I http://192.168.31.243:80
