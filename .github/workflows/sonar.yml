@@ -10,7 +10,7 @@ on:
 jobs:
   build:
     name: Build
-    runs-on: [self-hosted, ubuntu-latest]  # Add self-hosted runner with fallback to GitHub-hosted
+    runs-on: self-hosted  # Add self-hosted runner with fallback to GitHub-hosted
     steps:
       - uses: actions/checkout@v2
         with:
